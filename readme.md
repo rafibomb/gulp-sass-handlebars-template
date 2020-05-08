@@ -26,7 +26,7 @@ To use this template, your computer needs:
 git clone git@github.com:rafibomb/gulp-sass-handlebars-template.git your_project_name
 ```
 
-2. If you downloaded, unzip and rename the file to your project name. If not, skip this step :)
+2. If you cloned, return (skip this step) :) Else if you downloaded, unzip and rename the file to your project name.
 
 3. Then open the folder in your command line, and install the needed dependencies:
 
