@@ -1,13 +1,11 @@
-# ZURB WebApp Template
+# Project Starter Template
 
 [![devDependency Status](https://david-dm.org/zurb/foundation-zurb-template/dev-status.svg)](https://david-dm.org/zurb/foundation-zurb-template#info=devDependencies)
 
-**Please open all issues with this template on the main [Foundation for Sites](https://github.com/zurb/foundation-sites/issues) repo.**
-
-This is the official ZURB Template for use with [Foundation for Sites](http://foundation.zurb.com/sites). We use this template at ZURB to deliver static code to our clients. It has a Gulp-powered build system with these features:
+It has a Gulp-powered build system with these features:
 
 - Handlebars HTML templates with Panini
-- Sass compilation and prefixing
+- Sass compilation and autoprefixing
 - JavaScript module bundling with webpack
 - Built-in BrowserSync server
 - For production builds:
@@ -19,16 +17,16 @@ This is the official ZURB Template for use with [Foundation for Sites](http://fo
 
 To use this template, your computer needs:
 
-- [NodeJS](https://nodejs.org/en/) (Version 8 recommended, tested with 8.12.0)
+- [NodeJS](https://nodejs.org/en/) (Version 12 recommended, tested with 12.16.3)
 - [Git](https://git-scm.com/)
 
-1. **Download the template.** Do not clone it.
+1. **Download or clone the template.**
 
 ```bash
-https://github.com/zurb/foundation-zurb-template
+git clone git@github.com:rafibomb/gulp-sass-handlebars-template.git your_project_name
 ```
 
-2. Unzip and rename the file to your project name. Move it your sites folder.
+2. If you downloaded, unzip and rename the file to your project name. If not, skip this step :)
 
 3. Then open the folder in your command line, and install the needed dependencies:
 
@@ -43,9 +41,9 @@ yarn
 http://localhost:8000
 ```
 
-5. Change "Project Name" to your project's name in the `index.html`, styleguide > `index.md`, and in the layouts > `default.html` files.
-
 You're ready to go!
+
+---
 
 To create compressed, production-ready assets, run `yarn run build`.
 
