@@ -1,0 +1,10 @@
+@mixin container-border($shadow: false) {
+  border: $container-border;
+  border-radius: $container-radius;
+
+  @if $shadow {
+    box-shadow: $container-box-shadow;
+  } @else {
+    box-shadow: none;
+  }
+}

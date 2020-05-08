@@ -1,0 +1,50 @@
+@charset 'utf-8';
+@import 'colors';
+@import 'util/util';
+@import 'settings';
+
+// vendor styles
+// --------------------
+@import 'vendor/reset';
+@import 'vendor/animate-on-scroll';
+
+// mixins
+// --------------------
+@import 'mixins/animate-gradient';
+@import 'mixins/avatar';
+@import 'mixins/container-border';
+@import 'mixins/flexbox';
+@import 'mixins/psuedo';
+@import 'mixins/push-center';
+@import 'mixins/scrolling';
+@import 'mixins/sidelines';
+@import 'mixins/spacing';
+@import 'mixins/svg-coloring';
+@import 'mixins/transition';
+@import 'mixins/truncate';
+@import 'mixins/zindex';
+
+// global styles
+// --------------------
+@import 'global/animations';
+@import 'global/buttons';
+@import 'global/layout';
+@import 'global/typography';
+
+// --------------------
+// --------------------
+// custom components
+// --------------------
+// --------------------
+
+// custom forms
+// --------------------
+@import 'components/forms/checkbox';
+@import 'components/forms/inputs';
+
+// custom navigation
+// --------------------
+@import 'components/navigation/nav-main';
+
+// everything else
+// --------------------------------

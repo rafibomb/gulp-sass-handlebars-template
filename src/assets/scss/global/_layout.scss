@@ -1,0 +1,36 @@
+// sets grid-container gutter to grid gutter
+.grid-container {
+  padding-left: map-get($grid-margin-gutters, small);
+  padding-right: map-get($grid-margin-gutters, small);
+
+  @include breakpoint(medium) {
+    padding-left: map-get($grid-margin-gutters, medium);
+    padding-right: map-get($grid-margin-gutters, medium);
+  }
+}
+
+// grid-container with vertical spacing
+.section {
+  @extend .grid-container;
+  padding-top: $section-spacing/2;
+  padding-bottom: $section-spacing/2;
+
+  @include breakpoint(medium) {
+    padding-bottom: $section-spacing;
+    padding-top: $section-spacing;
+  }
+}
+
+// utilities
+// ----------
+
+// divider
+// ----------
+.container-divider-right {
+  border-bottom: $container-border;
+
+  @include breakpoint(medium) {
+    border-right: $container-border;
+    border-bottom: 0;
+  }
+}

@@ -1,0 +1,73 @@
+//  SCSS Settings Variables
+//  -----------------------------
+//
+//  Table of Contents:
+//
+//   1. Global
+//   2. Breakpoints
+//   3. Layout
+//   4. Typography
+
+/// Font size attribute applied to `<html>` and `<body>`. We use 100% by default so the value is inherited from the user's browser settings.
+$global-font-size: 100% !default;
+
+/// Global width of your site. Used by the grid to determine row width.
+$global-width: rem-calc(1200) !default;
+
+/// Default line height for all type. `$global-lineheight` is 24px while `$global-font-size` is 16px
+$global-lineheight: 1.5 !default;
+
+$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif !default;
+
+$global-radius: 0 !default;
+$global-button-cursor: auto !default;
+
+// layout
+// --------------------
+$main-nav-height: rem-calc(55);
+$section-spacing: rem-calc(
+  100
+); // vertical inner spacing between content sections
+
+// buttons
+// --------------------------------
+$button-font-weight: 400;
+
+// generic containers
+// --------------------
+$container-box-shadow: 0 0 16px 1px rgba(0, 0, 0, 0.3);
+$container-box-shadow-inverse: 0 0 16px 1px rgba(255, 255, 255, 0.3); // for dark bg's
+$container-border: 1px solid $medium-gray;
+$container-radius: $global-radius;
+
+// forms
+// --------------------------------
+$form-spacing: 16px;
+$checkbox-label-offset: 1.75rem;
+$checkbox-size: rem-calc(20);
+$checkbox-check-size: rem-calc(15);
+$global-rounded: 5000px;
+$checkbox-border-color: $border-color;
+$checkbox-bg: $white;
+$checkbox-selected-bg: $white;
+$checkbox-icon: url('../img/icons/checkmark-icon.svg');
+
+$input-height-mobile: rem-calc(40);
+$input-margin-bottom-mobile: rem-calc(20);
+$input-height: rem-calc(50);
+$input-margin-bottom: rem-calc(24);
+
+// 56. Xy Grid
+// -----------
+
+$xy-grid: true;
+$grid-container: $global-width;
+$grid-columns: 12;
+$grid-margin-gutters: (
+  small: 20px,
+  medium: 30px,
+);
+$grid-padding-gutters: $grid-margin-gutters;
+$grid-container-padding: $grid-padding-gutters;
+$grid-container-max: $global-width;
+$xy-block-grid-max: 8;
