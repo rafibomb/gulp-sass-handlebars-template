@@ -35,3 +35,18 @@ select {
 .input-group-field {
   margin-bottom: 0;
 }
+
+.form-contact {
+  @include push-center;
+  max-width: 600px;
+  margin-top: 6rem;
+
+  input,
+  textarea {
+		width: 100%;
+		display: block;
+    padding: 8px 16px;
+    border: 0;
+    border-radius: $global-radius;
+	}
+}

@@ -1,1 +1,49 @@
+.nav-main {
+	padding: 0.75rem 0;
+  background: rgba($black, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+}
 
+.nav-main-container {
+  @extend .grid-container;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-main-logo-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  color: $white;
+  width: min-content;
+
+  span {
+    white-space: nowrap;
+    font-weight: bold;
+  }
+
+  svg {
+    height: 40px;
+    width: 40px;
+    margin-right: 1rem;
+  }
+}
+
+.nav-main-links {
+  display: flex;
+  list-style-type: none;
+
+  > li + li {
+    margin-left: 1.5rem;
+  }
+
+  > li > a {
+    color: $white;
+    text-decoration: none;
+    font-weight: 600;
+  }
+}

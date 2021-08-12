@@ -1,0 +1,72 @@
+.hero	{
+	// padding: 32vh map-get($grid-margin-gutters, small);
+	text-align: center;
+	color: $white;
+	background-color: #101243;
+}
+
+.hero-scrolling-video-container {
+  height: 100vh;
+
+  video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: center;
+    font-size: 80px;
+    text-align: center;
+    width: 100%;
+    padding-left: 150px;
+    padding-right: 150px;
+    line-height: 100px;
+  }
+}
+
+.title1 {
+  color: $white;
+}
+
+.title2 {
+  opacity: 0;
+  color: $white;
+}
+
+.title3 {
+  opacity: 0;
+  color: $white;
+}
+
+@keyframes fade-away {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-back {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-away {
+  animation: fade-away 2s ease both;
+}
+
+.fade-back {
+  animation: fade-back 2s ease both;
+}

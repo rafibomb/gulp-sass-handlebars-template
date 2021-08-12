@@ -31,6 +31,16 @@
     margin: 0.67em 0;
   }
 
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p {
+		margin: 0;
+	}
+
   // Grouping content
   // ==========================================================================
 
@@ -349,6 +359,10 @@
     object {
       max-width: none !important;
     }
+  }
+
+  figure {
+    margin: 0;
   }
 
   // Reset <button> styles created by most browsers

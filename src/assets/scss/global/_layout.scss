@@ -1,5 +1,7 @@
 // sets grid-container gutter to grid gutter
 .grid-container {
+  @include push-center;
+  max-width: $global-width;
   padding-left: map-get($grid-margin-gutters, small);
   padding-right: map-get($grid-margin-gutters, small);
 
@@ -33,4 +35,131 @@
     border-right: $container-border;
     border-bottom: 0;
   }
+}
+
+.section-bg-light {
+	background-color: $light-gray;
+}
+
+.section-bg-primary {
+  background-color: $primary-color;
+}
+
+.section-bg-secondary {
+  background-color: $secondary-color;
+}
+
+.grid {
+  display: grid;
+  justify-items: center;
+  row-gap: map-get($grid-margin-gutters, small);
+
+  @include breakpoint(medium) {
+    row-gap: 0;
+
+    &.span-2 {
+      grid-template-columns: 1fr 1fr;
+      column-gap: map-get($grid-margin-gutters, large)*2;
+    }
+
+    &.span-3 {
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: map-get($grid-margin-gutters, large)*2;
+    }
+  }
+}
+
+.grid-vertical-center {
+  align-items: center;
+}
+
+.grid-media-block {
+  .cell:first-child {
+    order: 2;
+  }
+
+  .cell:last-child {
+    order: 1;
+  }
+
+  .section-img {
+    img {
+      width: 100%;
+      margin-bottom: 22px;
+    }
+  }
+
+  &.grid-pattern-reverse {
+    @include breakpoint(medium) {
+      .cell:first-child {
+        order: 2;
+      }
+
+      .cell:last-child {
+        order: 1;
+      }
+    }
+  }
+
+  @include breakpoint(medium) {
+    .section-img {
+      img {
+        margin-bottom: 0;
+      }
+    }
+
+    .cell:first-child {
+      order: 1;
+    }
+
+    .cell:last-child {
+      order: 2;
+    }
+  }
+}
+
+.mission-container {
+	display: flex;
+	margin-top: 100px;
+
+	.mission-container-item {
+		flex: 1 0 0;
+	}
+
+	.mission-container-item + .mission-container-item {
+		margin-left: 6rem;
+	}
+
+	.mission-container-headline {
+		margin-bottom: 2rem;
+	}
+}
+
+.icon-wrapper {
+	height: 74px;
+	width: 74px;
+	background-color: $primary-color;
+	border-radius: 50%;
+	position: relative;
+	margin-bottom: 50px;
+
+	svg {
+		@include absolute-center;
+		height: 32px;
+		width: 32px;
+
+		&.execute {
+			height: 45px;
+			width: 45px;
+		}
+
+    &.delivery {
+			height: 40px;
+			width: 40px;
+		}
+
+		path {
+			fill: $highlight-color;
+		}
+	}
 }
